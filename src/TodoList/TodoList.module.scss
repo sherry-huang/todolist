@@ -1,0 +1,100 @@
+.todo-list {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    align-items: flex-end;
+    
+    .container {
+        width: 360px;
+        height: 580px;
+        border: 3px #7F7F7F solid;
+        background-color: #E9EDF0;
+
+        .image-box {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 3px #7F7F7F solid;
+
+            .box {
+                padding: 30px 0;
+
+                .image {
+                    // width: 160px;
+                    height: 160px;
+                    border-radius: 50%;
+                    border: 3px #7F7F7F solid;
+                }
+            }
+        }
+
+        .btn-line {
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+
+            .btn {
+                background-color: #C1BFC0;
+                border: none;
+                color: #000;
+                width: 120px;
+                cursor: pointer;
+
+                &:hover, &.check {
+                    background-color: #7F7F7F;
+                    color: #FFF;
+                }
+            }
+        }
+
+        .input-box {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0 0 0;
+            border-top: 2px #7F7F7F solid;
+
+            .text-input {
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid #7F7F7F;
+                outline: none;
+                padding: 0 5px;
+                width: 160px;
+                margin-right: 30px;
+            }
+
+            .btn-plus {
+                border: none;
+            }
+        }
+
+        .list-box {
+            border-top: 2px solid #7F7F7F;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 30px 0;
+
+            .line-box {
+                display: flex;
+                justify-content: space-between;
+                width: 240px;
+                line-height: 25px;
+
+                .left-line {
+                    display: flex;
+                    justify-content: flex-start;
+
+                    .line-word {
+                        display: flex;
+                        align-items: center;
+
+                        &.delete {
+                            text-decoration: line-through;
+                            text-decoration-color: #7F7F7F;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
